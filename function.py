@@ -24,7 +24,7 @@ class BE_Team:
         self.polling = self.openTransport("/P4")
         self.profile = self.getProfile()
         self.serverTime = self.getServerTime()
-        self.localRev = 0
+        self.localRev = -1
         self.globalRev = 0
         self.individualRev = 0
         print("[ Login ] Display Name: " + self.profile.displayName)
