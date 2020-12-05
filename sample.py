@@ -39,10 +39,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
                 if op.revision == -1 and op.param2 != None:
                     cl.globalRev = int(op.param2.split("\x1e")[0])
                 if op.revision == -1 and op.param1 != None:
-                    try:
-                        cl.individualRev = int(op.param1.split("\x1e")[1])
-                    except:
-                        cl.individualRev = int(op.param1.split("\x1e")[0])
+                    cl.individualRev = int(op.param1.split("\x1e")[0])
                 cl.localRev = max(op.revision, cl.localRev)
                 executor.submit(worker,op)
         except:
