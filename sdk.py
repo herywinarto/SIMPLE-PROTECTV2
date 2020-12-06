@@ -123,7 +123,7 @@ def worker(op):
         if op.type == 128:
             #Leave
             if op.param2 not in warga:
-                cl.sendMessage(to, "Minggat lo sana")
+                cl.sendMessage(op.param1, "Minggat lo sana")
             else: pass
 
         if op.type == 130:
