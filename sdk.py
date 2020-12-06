@@ -1,7 +1,5 @@
 from function import *
 
-#cl = BE_Team(myToken="uddcc80222d63bd141056cc485406c039:aXNzdWVkVG86IHVkZGNjODAyMjJkNjNiZDE0MTA1NmNjNDg1NDA2YzAzOQppYXQ6IDE2MDcxMDA5NTMzNDkK.dHlwZTogWVdUCmFsZzogSE1BQ19TSEExCg==.5RBNJpg4KyNu+V626C2nbsWqg8Q=",
-#           myApp="ANDROIDLITE\t2.14.0\tAndroid OS\t5.1.1")
 cl = BE_Team(myToken="Token Primary",
             myApp="ANDROIDLITE\t2.14.0\tAndroid OS\t5.1.1")
 dl = BE_Team(myToken="Token Primary",
